@@ -1,0 +1,114 @@
+<div class="main-content">
+    <div class="section-content section-content-p30">
+        <div class="container-fluid">
+            <div class="row">
+
+                <!-- loop over the collection of products -->
+                <div *ngFor="let tempProduct of products" class="col-md-3">
+
+                    <div class="product-box">
+
+                        <a routerLink="/products/{{ tempProduct.id }}">
+                            <img src="{{ tempProduct.imageUrl }}" class="img-responsive">
+                        </a>
+
+                        <a routerLink="/products/{{ tempProduct.id }}">
+                            <h1>{{ tempProduct.name }}</h1>
+                        </a>
+                        
+                        <div class="price">{{ tempProduct.unitPrice | currency:'USD' }}</div>
+                        <button (click)="addToCart(tempProduct)" class="btn btn-primary btn sm">Add to cart</button>
+                    </div>
+
+                </div>
+
+                <!-- TESTING START - Create Homepage Front end -->
+
+                <div *ngIf="currentCategoryId == 5">
+                    <img src="assets/images/Home.png" style="width:100%;" alt="luv2shop" class="img-responsive">
+                    <br>
+                    <br>
+                    <br>
+                    <h4><p style="text-align:center">About Us</p></h4>
+
+                    <p style="text-align: center">
+                        It all started a a few summers ago while surfing and skateboarding. Two teenage siblings still in high school 
+                        became fascinated with fashion by having amazing conversations over delicious drinks. Their primary goal was to create
+                        eco-friendly clothing that both skaters and surfers would love. They also wanted to sell their own lemonade, and dreamed of reducing apparel waste and saving money for college, while still attending school.
+                        <br>
+                        <br>
+                        <br>
+                        The founders of the Michael Emma Store decided to sell limited edition non fast fashion clothing and discover methods to recycle clothing. 
+                        The Michael Emma Store founders are also searching to find ways on how to use or develop technical and process innovation to reduce or eliminate
+                        the contribution of clothing to landfill waste and water pollution.
+                        <br>
+                        <br>
+                        The Michael Emma Store still wants to contribute to saving the bees and to start selling premier grade beeswax products and beverages.
+                        <br>
+                        <br>
+                        The Michael Emma Store’s mission is to create supreme quality products for its community of surfers and skaters by using fashion innovation to play a part in an eco-friendly planet.
+                        We hope that through our quality products and delicious lemonade, we will bring the community together and strengthen our skate and surf communities.
+                    </p>
+
+                    <br>
+
+                    <img src="assets/images/about_pic1.png" style="width:100%;" alt="home" class="img-responsive">
+                    <br>
+                    <br>
+                    <div style="text-align:center">
+                        <a routerLink="/products" class="btn btn-primary btn sm" style="text-align:center">       
+                        <button>Shop T-shirts</button>
+                    </a></div>
+                    <br>
+                    <img src="assets/images/about_pic2.png" style="width:100%;" alt="home" class="img-responsive">
+                    
+                </div>
+
+
+                <!-- TESTING END -->
+
+                <!-- if products empty then display a message -->
+                <div *ngIf="products?.length == 0 && currentCategoryId != 5" class="alert alert-warning col-md-12" role="alert">
+                    No products found.
+                </div>
+            </div>
+
+            <!-- begin footer -->
+            <div class="footer-pagination">
+                <div class="row">
+                    <div class="col-md-6"></div>
+
+                    <div class="col-md-6"></div>
+                        <div class="row">
+                            <div class="col-md-9" style="padding-left: 30%">
+                            
+                                <ngb-pagination [(page)]="thePageNumber"
+                                                [pageSize]="thePageSize"
+                                                [collectionSize]="theTotalElements"
+                                                [maxSize]="5"
+                                                [boundaryLinks]="true"
+                                                (pageChange)="listProducts()">
+
+                                </ngb-pagination>
+                            </div>
+
+                            <div class="col-md-3 mt-2" style="text-align: right;">
+                                <span class="mr-2">Page Size</span>
+
+                                <select #myPageSelect (change)="updatePageSize(myPageSelect.value)">
+                                    <option selected="true">5</option>
+                                    <option>10</option>
+                                    <option>20</option>
+                                    <option>50</option>
+                                </select>
+                            </div>
+
+                        </div>
+                </div>
+
+            </div>
+
+            <!-- end footer -->
+        </div>
+    </div>
+</div>
