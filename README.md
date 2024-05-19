@@ -11,6 +11,8 @@
 
 The Michael Emma online store is a fullstack e-commerce website where users can purchase a wide variety of products. It was developed to provide a complete shopping experience for my client's customers and to provide more exposure for his products and personal brand.
 
+<img width="800" alt="home_page" src="https://github.com/ognimoddd/fullstack-angular-springboot/assets/77591203/4450758b-2a4a-4f9a-bdb5-4c9313ba229a">
+
 ## Technologies Used
 
 ### Frontend
@@ -78,7 +80,10 @@ For testing purposes, users can complete their purchase using the following test
 7. Order Confirmation and Tracking:
     * After successfully placing an order, a confirmation popup will appear.
     * Additionally, users can access the "Orders" section in their account to view all orders.
-    
+
+## Contributions
+
+I am committed to a fully transparent development process and would greatly appreciate any contributions. Whether you are helping to fix bugs, proposing new features, or improving documentation - I would love to have your contribution and/or feedback. Thank you for checking out my repository!
 
 
 
