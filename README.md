@@ -10,8 +10,40 @@
 ## Introduction
 
 The Michael Emma online store is a fullstack e-commerce website where users can purchase a wide variety of products. It was developed to provide a complete shopping experience for my client's customers and to provide more exposure for his products and personal brand.
+<br>
+<br>
+
+
+Home Page:
 
 <img width="800" alt="home_page" src="https://github.com/ognimoddd/fullstack-angular-springboot/assets/77591203/4450758b-2a4a-4f9a-bdb5-4c9313ba229a">
+
+<br>
+<br>
+About Us Page:
+<br>
+<br>
+
+<img width="800" alt="aboutus_page" src="https://github.com/ognimoddd/fullstack-angular-springboot/assets/77591203/821bf81e-ab03-4974-848e-08701ba60d47">
+
+<br>
+<br>
+Shopping Cart:
+<br>
+<br>
+
+<img width="800" alt="aboutus_page" src="https://github.com/ognimoddd/fullstack-angular-springboot/assets/77591203/b2a86072-77cf-4aa2-8ec0-ee20e21648cd">
+
+<br>
+<br>
+Checkout Form (Secure payments through Stripe):
+<br>
+<br>
+
+<img width="800" alt="aboutus_page" src="https://github.com/ognimoddd/fullstack-angular-springboot/assets/77591203/6f3ecb39-65d5-4d22-bc18-04383c81d052">
+
+<br>
+<br>
 
 ## Technologies Used
 
