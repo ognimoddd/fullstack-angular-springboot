@@ -5,6 +5,7 @@
 <li><b>Technologies Used</b></li>
 <li><b> Installation Guide </b> </li>
 <li><b> Features </b></li>
+<li><b> Demo </b></li>
 <li><b> Contributions </b></li>
 
 ## Introduction
@@ -112,6 +113,10 @@ For testing purposes, users can complete their purchase using the following test
 7. Order Confirmation and Tracking:
     * After successfully placing an order, a confirmation popup will appear.
     * Additionally, users can access the "Orders" section in their account to view all orders.
+  
+## Demo
+
+https://youtu.be/hv4ep9Qj8Mc
 
 ## Contributions
 
