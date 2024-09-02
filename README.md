@@ -90,8 +90,8 @@ Checkout Form (Secure payments through Stripe):
     * Users can view all products without having to sign in. Simply visit the website to view all the available products.
 2. Login:
     * To sign in, use the following login info:
-        * Email:
-        * Password: 
+        * Email: admin1178@gmail.com
+        * Password: admin
 3. Additional features for users who are logged in:
     * Logging in provides access to more sections of the website, such as:
       * Members: Exclusive content available only for members.
